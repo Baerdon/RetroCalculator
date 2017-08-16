@@ -11,7 +11,9 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var outputLbl: UILabel!
     var buttonSound: AVAudioPlayer!
+    var runningNumber = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,8 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: UIButton){
         playSound()
+        runningNumber += "\(sender.tag)"
+        outputLbl.text = runningNumber
     }
     
     func playSound() {
