@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -96,13 +96,12 @@
 				TargetAttributes = {
 					F6182C161F44317500DE2EE7 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8S9A67SJKZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = F6182C121F44317400DE2EE7 /* Build configuration list for PBXProject "RetroCalculator" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
