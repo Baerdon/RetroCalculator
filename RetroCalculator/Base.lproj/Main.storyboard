@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,7 +31,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="pGX-Jp-rGS">
-                                <rect key="frame" x="21" y="13" width="278" height="69"/>
+                                <rect key="frame" x="21" y="8" width="278" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="278" id="iRw-Ou-7zK"/>
                                     <constraint firstAttribute="height" constant="69" id="jbg-sE-kfm"/>
@@ -212,9 +211,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRW-wo-vXB">
-                                <rect key="frame" x="34" y="28" width="248" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRW-wo-vXB">
+                                <rect key="frame" x="36" y="22" width="248" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="3IA-Ge-IhN"/>
+                                    <constraint firstAttribute="height" constant="40" id="ZFS-a9-AcE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -222,7 +224,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pGX-Jp-rGS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="13" id="1lB-ca-hhK"/>
                             <constraint firstItem="Zqe-lc-R0C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="58p-rn-JMD"/>
                             <constraint firstItem="c5h-Wo-d9g" firstAttribute="centerX" secondItem="DFP-FR-mF7" secondAttribute="centerX" id="5uX-3b-VU4"/>
                             <constraint firstAttribute="trailing" secondItem="Zqe-lc-R0C" secondAttribute="trailing" id="Dre-LX-QMP"/>
@@ -231,9 +232,12 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zqe-lc-R0C" secondAttribute="bottom" id="JkE-65-Ykh"/>
                             <constraint firstItem="c5h-Wo-d9g" firstAttribute="centerY" secondItem="DFP-FR-mF7" secondAttribute="centerY" id="S1z-DV-bUi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lr1-Ns-CrV" secondAttribute="bottom" id="Vz6-ig-vYm"/>
+                            <constraint firstItem="GRW-wo-vXB" firstAttribute="centerX" secondItem="pGX-Jp-rGS" secondAttribute="centerX" id="i4a-bY-mR6"/>
+                            <constraint firstItem="DFP-FR-mF7" firstAttribute="top" secondItem="pGX-Jp-rGS" secondAttribute="bottom" constant="12" id="nfI-to-IVN"/>
                             <constraint firstItem="Lr1-Ns-CrV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oXx-a5-sSX"/>
                             <constraint firstAttribute="trailing" secondItem="Lr1-Ns-CrV" secondAttribute="trailing" id="okn-ga-258"/>
                             <constraint firstItem="DFP-FR-mF7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="40" id="rOu-oA-kyp"/>
+                            <constraint firstItem="GRW-wo-vXB" firstAttribute="centerY" secondItem="pGX-Jp-rGS" secondAttribute="centerY" id="wP7-7j-sWp"/>
                             <constraint firstItem="DFP-FR-mF7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xRg-4H-LSI"/>
                         </constraints>
                     </view>
