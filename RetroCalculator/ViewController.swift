@@ -13,7 +13,19 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var outputLbl: UILabel!
     var buttonSound: AVAudioPlayer!
+    
     var runningNumber = ""
+    enum Operations: String {
+        case Divide = "/"
+        case Multiply = "*"
+        case Substract = "-"
+        case Add = "+"
+        case Empty = "Empty"
+    }
+    var currentOperation = Operations.Empty
+    var leftValString = ""
+    var rightValString = ""
+    var result = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +47,55 @@ class ViewController: UIViewController {
         outputLbl.text = runningNumber
     }
     
+    @IBAction func onDividePressed(sender: UIButton){
+        processOperation(operation: .Divide)
+    }
+    @IBAction func onMultiplyPressed(sender: UIButton){
+        processOperation(operation: .Multiply)
+    }
+    @IBAction func onSubtractPressed(sender: UIButton){
+        processOperation(operation: .Substract)
+    }
+    @IBAction func onAddPressed(sender: UIButton){
+        processOperation(operation: .Add)
+    }
+    @IBAction func onEqualPressed(sender: UIButton){
+        processOperation(operation: currentOperation)
+    }
+    
     func playSound() {
         if buttonSound.isPlaying {
             buttonSound.stop()
         }
         buttonSound.play()
+    }
+    
+    func processOperation(operation: Operations){
+        playSound()
+        if currentOperation != Operations.Empty {
+            if runningNumber != "" {
+                rightValString = runningNumber
+                runningNumber = ""
+                if currentOperation == Operations.Multiply{
+                    result = "\(Double(leftValString)! * Double(rightValString)!)"
+                } else if currentOperation == Operations.Divide{
+                    result = "\(Double(leftValString)! / Double(rightValString)!)"
+                } else if currentOperation == Operations.Substract{
+                    result = "\(Double(leftValString)! - Double(rightValString)!)"
+                } else if currentOperation == Operations.Add{
+                    result = "\(Double(leftValString)! + Double(rightValString)!)"
+                }
+                leftValString = result
+                outputLbl.text = result
+            }
+            currentOperation = operation
+        } else {
+            leftValString = runningNumber
+            runningNumber = ""
+            currentOperation = operation
+        }
+        
+        
     }
 
 }
