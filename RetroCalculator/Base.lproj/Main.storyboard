@@ -24,10 +24,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="Lr1-Ns-CrV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="Zqe-lc-R0C">
+                                <rect key="frame" x="0.0" y="520" width="320" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="AyK-fO-aDQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Zqe-lc-R0C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="58p-rn-JMD"/>
+                            <constraint firstAttribute="trailing" secondItem="Zqe-lc-R0C" secondAttribute="trailing" id="Dre-LX-QMP"/>
                             <constraint firstItem="Lr1-Ns-CrV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I0K-vL-bFH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zqe-lc-R0C" secondAttribute="bottom" id="JkE-65-Ykh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lr1-Ns-CrV" secondAttribute="bottom" id="Vz6-ig-vYm"/>
                             <constraint firstItem="Lr1-Ns-CrV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oXx-a5-sSX"/>
                             <constraint firstAttribute="trailing" secondItem="Lr1-Ns-CrV" secondAttribute="trailing" id="okn-ga-258"/>
@@ -40,6 +49,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ground" width="888" height="72"/>
         <image name="space-bg" width="988" height="946"/>
     </resources>
 </document>
