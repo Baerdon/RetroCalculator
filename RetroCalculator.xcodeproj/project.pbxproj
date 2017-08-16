@@ -14,6 +14,7 @@
 		F6182C251F44317500DE2EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6182C231F44317500DE2EE7 /* LaunchScreen.storyboard */; };
 		F6182C2D1F4448DD00DE2EE7 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6182C2C1F4448DD00DE2EE7 /* Minecraft.ttf */; };
 		F6182C2F1F444A5000DE2EE7 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = F6182C2E1F444A5000DE2EE7 /* btn.wav */; };
+		F6182C311F44607A00DE2EE7 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6182C301F44607A00DE2EE7 /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F6182C261F44317500DE2EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6182C2C1F4448DD00DE2EE7 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		F6182C2E1F444A5000DE2EE7 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		F6182C301F44607A00DE2EE7 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F6182C2C1F4448DD00DE2EE7 /* Minecraft.ttf */,
 				F6182C1A1F44317500DE2EE7 /* AppDelegate.swift */,
 				F6182C1C1F44317500DE2EE7 /* ViewController.swift */,
+				F6182C301F44607A00DE2EE7 /* LaunchScreenViewController.swift */,
 				F6182C1E1F44317500DE2EE7 /* Main.storyboard */,
 				F6182C211F44317500DE2EE7 /* Assets.xcassets */,
 				F6182C231F44317500DE2EE7 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6182C1D1F44317500DE2EE7 /* ViewController.swift in Sources */,
+				F6182C311F44607A00DE2EE7 /* LaunchScreenViewController.swift in Sources */,
 				F6182C1B1F44317500DE2EE7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
